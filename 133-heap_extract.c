@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include "0-binary_tree_node.c"
 
 /**
  * t_height - measures the height of a binary tree
@@ -57,7 +58,7 @@ void pre_order(heap_t *tree, heap_t **node, size_t height)
 	if (tree == NULL)
 		return;
 
-	if (height == NULL)
+	if (!height)
 		*node = tree;
 	height--;
 
